@@ -1,38 +1,86 @@
 ---
-description: Android Kotlin 项目开发工作流与部署配置
+description: AppForge Android 项目开发工作流与部署配置
 alwaysApply: true
 ---
 
-# Android 项目开发工作流
+# AppForge - Android 应用壳子模板
 
-本项目使用 Cursor 编写代码，Android Studio 负责调试、运行和打包。
+通用 Android 应用壳子，支持工具 App 和游戏壳子两种模式。
 
 ## 项目信息
 
+- 项目名称：`AppForge`
 - 包名：`com.example.kotlin_app_study`
 - 主 Activity：`.MainActivity`
+- Application：`.App`
 - 语言：Kotlin + Jetpack Compose
+- 构建工具：Gradle 9.3.1（Kotlin DSL）
 - SDK 路径：`C:\Users\Administrator\AppData\Local\Android\Sdk`
 - ADB 路径：`C:\Users\Administrator\AppData\Local\Android\Sdk\platform-tools\adb.exe`
 
 ## 部署到模拟器
 
-修改代码后，使用以下命令编译安装并启动 app：
-
 ```bash
 cd "e:\my_work_new\kotlin-app" && ./gradlew.bat installDebug && "C:\Users\Administrator\AppData\Local\Android\Sdk\platform-tools\adb.exe" shell am start -n com.example.kotlin_app_study/.MainActivity
 ```
 
-注意：此方式会重新安装 APK 并重启 app，不是无缝热更新。
+## 项目架构
 
-## 热更新说明
+```
+com.example.kotlin_app_study/
+├── App.kt                    # Application，初始化 SDK
+├── MainActivity.kt           # 主 Activity
+├── ads/                      # 广告模块
+│   ├── AdProvider.kt          # 广告提供商抽象接口
+│   ├── AdMobProvider.kt       # AdMob 实现
+│   ├── AdConfig.kt            # 广告 ID 配置（测试/正式）
+│   ├── AdManager.kt           # 广告统一管理器
+│   └── AdFrequencyController.kt # 频率控制
+├── bridge/                   # 游戏引擎桥接层
+│   ├── GameBridge.kt          # 桥接抽象接口
+│   ├── AdBridge.kt            # 广告桥接（供游戏调用）
+│   └── NativeBridge.kt        # 原生功能总桥接
+├── network/                  # 网络层
+│   ├── ApiClient.kt           # Retrofit 客户端
+│   ├── api/ConfigApi.kt       # 配置接口
+│   └── model/ApiResponse.kt   # 响应模型
+├── ui/
+│   ├── screen/                # 页面
+│   ├── component/AdBannerView.kt # Banner 广告组件
+│   └── theme/                 # 主题
+└── util/ContextExt.kt         # 工具扩展函数
+```
 
-- Cursor 不支持 Android Live Edit，无法做到无缝热刷新
-- 从 Cursor 部署到模拟器需要重新安装 APK（约 5-7 秒）
-- 真正的 Live Edit 只能在 Android Studio 内部编辑时生效
+## 广告使用方式
+
+```kotlin
+// Banner：在 Compose 中使用
+AdBannerView()
+
+// 插屏：
+AdManager.showInterstitial(activity)
+
+// 激励视频：
+AdManager.showRewarded(activity, onRewarded = { /* 发奖励 */ })
+
+// 开屏：
+AdManager.showAppOpen(activity)
+
+// 去广告：
+AdManager.setAdFree(true)
+```
+
+## 扩展其他广告商
+
+实现 `AdProvider` 接口，然后切换：
+```kotlin
+AdManager.setProvider(PangolinProvider())  // 穿山甲
+AdManager.setProvider(GDTProvider())        // 优量汇
+```
 
 ## 开发约定
 
 - Cursor 负责：编写代码、AI 辅助开发
-- Android Studio 负责：调试运行、UI 预览（Preview）、打包发布
-- 两个 IDE 可以同时打开同一项目，互不冲突
+- Android Studio 负责：调试运行、UI 预览、打包签名发布、Gradle 同步
+- 新增依赖后需在 Android Studio 中 Sync Gradle
+- 上架前将 AdConfig.ProdIds 替换为真实广告 ID
