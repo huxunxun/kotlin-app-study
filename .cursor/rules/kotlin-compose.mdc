@@ -1,0 +1,27 @@
+---
+description: Kotlin Jetpack Compose 编码规范
+globs: "**/*.kt"
+alwaysApply: false
+---
+
+# Kotlin + Jetpack Compose 编码规范
+
+## 技术栈
+
+- Jetpack Compose（声明式 UI）
+- Material 3 + Material Icons Extended
+- Kotlin，Java 11 兼容
+- minSdk 24，targetSdk 36
+
+## Compose 编写规范
+
+- 使用 `@Composable` 函数构建 UI，避免使用传统 XML 布局
+- 每个独立 UI 组件抽取为单独的 `@Composable` 函数
+- 为页面级 Composable 添加 `@Preview` 注解方便在 Android Studio 中预览
+- Modifier 参数放在第一个可选参数位置，默认值为 `Modifier`
+
+## 依赖管理
+
+- Compose 相关依赖通过 BOM 管理：`libs.androidx.compose.bom`
+- 图标库已引入：`androidx.compose.material:material-icons-extended`
+- 新增依赖后需要在 Android Studio 中 Sync Gradle

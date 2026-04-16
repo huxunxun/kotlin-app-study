@@ -1,0 +1,38 @@
+---
+description: Android Kotlin 项目开发工作流与部署配置
+alwaysApply: true
+---
+
+# Android 项目开发工作流
+
+本项目使用 Cursor 编写代码，Android Studio 负责调试、运行和打包。
+
+## 项目信息
+
+- 包名：`com.example.kotlin_app_study`
+- 主 Activity：`.MainActivity`
+- 语言：Kotlin + Jetpack Compose
+- SDK 路径：`C:\Users\Administrator\AppData\Local\Android\Sdk`
+- ADB 路径：`C:\Users\Administrator\AppData\Local\Android\Sdk\platform-tools\adb.exe`
+
+## 部署到模拟器
+
+修改代码后，使用以下命令编译安装并启动 app：
+
+```bash
+cd "e:\my_work_new\kotlin-app" && ./gradlew.bat installDebug && "C:\Users\Administrator\AppData\Local\Android\Sdk\platform-tools\adb.exe" shell am start -n com.example.kotlin_app_study/.MainActivity
+```
+
+注意：此方式会重新安装 APK 并重启 app，不是无缝热更新。
+
+## 热更新说明
+
+- Cursor 不支持 Android Live Edit，无法做到无缝热刷新
+- 从 Cursor 部署到模拟器需要重新安装 APK（约 5-7 秒）
+- 真正的 Live Edit 只能在 Android Studio 内部编辑时生效
+
+## 开发约定
+
+- Cursor 负责：编写代码、AI 辅助开发
+- Android Studio 负责：调试运行、UI 预览（Preview）、打包发布
+- 两个 IDE 可以同时打开同一项目，互不冲突
