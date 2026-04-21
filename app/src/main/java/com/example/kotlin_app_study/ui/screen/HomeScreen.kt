@@ -121,7 +121,7 @@ fun HomeScreen(
                     color = Color.White
                 )
                 Text(
-                    text = "Build · Ship · Monetize",
+                    text = "Build · Ship · Monetize · 自动部署 OK",
                     fontSize = 14.sp,
                     color = Color.White.copy(alpha = 0.8f)
                 )

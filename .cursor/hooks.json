@@ -3,7 +3,7 @@
   "hooks": {
     "stop": [
       {
-        "command": ".cursor/hooks/auto-deploy.bat",
+        "command": ".cursor/hooks/auto-deploy.sh",
         "timeout": 120
       }
     ]

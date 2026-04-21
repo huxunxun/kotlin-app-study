@@ -15,14 +15,24 @@ alwaysApply: true
 - Application：`.App`
 - 语言：Kotlin + Jetpack Compose
 - 构建工具：Gradle 9.3.1（Kotlin DSL）
-- SDK 路径：`C:\Users\Administrator\AppData\Local\Android\Sdk`
-- ADB 路径：`C:\Users\Administrator\AppData\Local\Android\Sdk\platform-tools\adb.exe`
+- SDK 路径（macOS）：`/Users/aoemo/Library/Android/sdk`
+- ADB 路径（macOS）：`$ANDROID_HOME/platform-tools/adb`
+- JDK：Android Studio 自带 JBR 21（`/Applications/Android Studio.app/Contents/jbr/Contents/Home`）
 
 ## 部署到模拟器
 
+手动一行命令：
+
 ```bash
-cd "e:\my_work_new\kotlin-app" && ./gradlew.bat installDebug && "C:\Users\Administrator\AppData\Local\Android\Sdk\platform-tools\adb.exe" shell am start -n com.example.kotlin_app_study/.MainActivity
+./gradlew :app:installDebug && \
+  "$ANDROID_HOME/platform-tools/adb" shell am start -n com.example.kotlin_app_study/.MainActivity
 ```
+
+或者通过 Cursor Hook 自动部署（已配置）：
+- `.cursor/hooks.json` 在 agent `stop` 事件触发
+- 调用 `.cursor/hooks/auto-deploy.sh`：检测 `app/src` 下 `.kt`/`.xml` 自上次部署后是否变更 → `gradlew assembleDebug` → 给所有连接设备 `adb install -r` + `am start`
+- 部署日志：`.cursor/hooks/auto-deploy.log`
+- 上次部署时间戳：`.last_deploy`
 
 ## 项目架构
 
