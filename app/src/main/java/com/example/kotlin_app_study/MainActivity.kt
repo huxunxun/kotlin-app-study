@@ -4,59 +4,46 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.ui.Modifier
-import com.example.kotlin_app_study.ads.AdManager
-import com.example.kotlin_app_study.bridge.AdBridge
-import com.example.kotlin_app_study.bridge.NativeBridge
-import com.example.kotlin_app_study.ui.component.AdBannerView
-import com.example.kotlin_app_study.ui.screen.HomeScreen
-import com.example.kotlin_app_study.ui.theme.KotlinappstudyTheme
+import androidx.core.view.WindowCompat
+import androidx.core.view.WindowInsetsCompat
+import androidx.core.view.WindowInsetsControllerCompat
+import com.example.kotlin_app_study.bp.BPNavHost
+import com.example.kotlin_app_study.bp.theme.BloodPressureTheme
 
+/**
+ * 血压 App 入口。
+ * - Edge-to-Edge 沉浸式：状态栏透明 + 隐藏底部系统导航栏（手势条）。
+ */
 class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
-        initBridge()
-        preloadAds()
+        WindowCompat.setDecorFitsSystemWindows(window, false)
+        WindowInsetsControllerCompat(window, window.decorView).apply {
+            // 隐藏底部系统导航栏（手势条），从屏幕边缘上滑可临时唤出
+            hide(WindowInsetsCompat.Type.navigationBars())
+            systemBarsBehavior =
+                WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
+        }
 
         setContent {
-            KotlinappstudyTheme {
-                Scaffold(
-                    modifier = Modifier.fillMaxSize(),
-                    bottomBar = { AdBannerView() }
-                ) { innerPadding ->
-                    HomeScreen(
-                        modifier = Modifier.padding(innerPadding),
-                        onShowInterstitial = {
-                            AdManager.showInterstitial(this)
-                        },
-                        onShowRewarded = { onRewarded ->
-                            AdManager.showRewarded(this, onRewarded = onRewarded)
-                        }
-                    )
-                }
+            BloodPressureTheme {
+                BPNavHost()
             }
         }
     }
 
-    private fun initBridge() {
-        AdBridge.init(this, NativeBridge)
-    }
-
-    private fun preloadAds() {
-        AdManager.preloadInterstitial(this)
-        AdManager.preloadRewarded(this)
-        AdManager.preloadAppOpen(this)
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        AdManager.destroyBanner()
-        AdBridge.destroy()
+    override fun onWindowFocusChanged(hasFocus: Boolean) {
+        super.onWindowFocusChanged(hasFocus)
+        if (hasFocus) {
+            // 失焦后再次进入应用时，再次隐藏系统导航
+            WindowInsetsControllerCompat(window, window.decorView).apply {
+                hide(WindowInsetsCompat.Type.navigationBars())
+                systemBarsBehavior =
+                    WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
+            }
+        }
     }
 }
