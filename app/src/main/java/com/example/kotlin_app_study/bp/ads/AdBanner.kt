@@ -8,6 +8,8 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.LocalDensity
+import androidx.compose.ui.platform.LocalWindowInfo
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
@@ -32,7 +34,9 @@ fun AdBanner(
     adUnitId: String = AdUnits.BANNER,
 ) {
     val context = LocalContext.current
-    val widthDp = context.resources.configuration.screenWidthDp
+    val density = LocalDensity.current
+    val containerWidthPx = LocalWindowInfo.current.containerSize.width
+    val widthDp: Int = with(density) { containerWidthPx.toDp().value.toInt() }
     val adSize: AdSize = remember(widthDp) {
         AdSize.getCurrentOrientationAnchoredAdaptiveBannerAdSize(context, widthDp)
     }
