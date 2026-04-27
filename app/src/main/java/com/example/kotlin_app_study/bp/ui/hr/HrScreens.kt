@@ -97,6 +97,28 @@ fun HRDetailScreen(onBack: () -> Unit, onMeasure: () -> Unit) {
         BarPoint(r.bpm.toFloat(), "${cal.get(Calendar.MONTH) + 1}-${cal.get(Calendar.DAY_OF_MONTH)}")
     }
 
+    // 根据实际数据动态计算 Y 轴范围，避免柱条 / 数字超出图表区域。
+    // 上下各留 10 BPM 余量，并按 10 取整；最小跨度 40 BPM，保证刻度好看。
+    val (yMinHr, yMaxHr, yStepHr) = run {
+        if (barPoints.isEmpty()) {
+            Triple(40f, 120f, 20f)
+        } else {
+            val dataMin = barPoints.minOf { it.value }
+            val dataMax = barPoints.maxOf { it.value }
+            val minR = (kotlin.math.floor((dataMin - 10f) / 10f) * 10f).coerceAtLeast(30f)
+            val maxR = (kotlin.math.ceil((dataMax + 10f) / 10f) * 10f).coerceAtLeast(minR + 40f)
+            val span = maxR - minR
+            val step = when {
+                span <= 40f -> 10f
+                span <= 80f -> 20f
+                span <= 120f -> 30f
+                span <= 160f -> 40f
+                else -> (kotlin.math.ceil(span / 4f / 10f) * 10f)
+            }
+            Triple(minR, maxR, step)
+        }
+    }
+
     Column(modifier = Modifier.fillMaxSize().background(MaterialTheme.colorScheme.background)) {
         BPTopBar(title = "心率", onBack = onBack, actions = {
             Text(
@@ -125,7 +147,7 @@ fun HRDetailScreen(onBack: () -> Unit, onMeasure: () -> Unit) {
                 } else {
                     ScreenshotBarChart(
                         points = barPoints,
-                        yMin = 40f, yMax = 80f, yStep = 8f,
+                        yMin = yMinHr, yMax = yMaxHr, yStep = yStepHr,
                         yearLabel = year,
                     )
                 }

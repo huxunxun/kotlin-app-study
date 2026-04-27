@@ -1,0 +1,849 @@
+  bash arg: --throttle
+  bash arg: 50
+  bash arg: --pct-touch
+  bash arg: 50
+  bash arg: --pct-motion
+  bash arg: 25
+  bash arg: --pct-trackball
+  bash arg: 0
+  bash arg: --pct-nav
+  bash arg: 5
+  bash arg: --pct-majornav
+  bash arg: 5
+  bash arg: --pct-syskeys
+  bash arg: 0
+  bash arg: --pct-appswitch
+  bash arg: 5
+  bash arg: --pct-anyevent
+  bash arg: 10
+  bash arg: --ignore-crashes
+  bash arg: --ignore-timeouts
+  bash arg: --ignore-security-exceptions
+  bash arg: --monitor-native-crashes
+  bash arg: -v
+  bash arg: -v
+  bash arg: 10000
+args: [--throttle, 50, --pct-touch, 50, --pct-motion, 25, --pct-trackball, 0, --pct-nav, 5, --pct-majornav, 5, --pct-syskeys, 0, --pct-appswitch, 5, --pct-anyevent, 10, --ignore-crashes, --ignore-timeouts, --ignore-security-exceptions, --monitor-native-crashes, -v, -v, 10000]
+ arg: "--throttle"
+ arg: "50"
+ arg: "--pct-touch"
+ arg: "50"
+ arg: "--pct-motion"
+ arg: "25"
+ arg: "--pct-trackball"
+ arg: "0"
+ arg: "--pct-nav"
+ arg: "5"
+ arg: "--pct-majornav"
+ arg: "5"
+ arg: "--pct-syskeys"
+ arg: "0"
+ arg: "--pct-appswitch"
+ arg: "5"
+ arg: "--pct-anyevent"
+ arg: "10"
+ arg: "--ignore-crashes"
+ arg: "--ignore-timeouts"
+ arg: "--ignore-security-exceptions"
+ arg: "--monitor-native-crashes"
+ arg: "-v"
+ arg: "-v"
+ arg: "10000"
+arg="--throttle" mCurArgData="null" mNextArg=1 argwas="--throttle" nextarg="50"
+data="50"
+arg="--pct-touch" mCurArgData="null" mNextArg=3 argwas="--pct-touch" nextarg="50"
+data="50"
+arg="--pct-motion" mCurArgData="null" mNextArg=5 argwas="--pct-motion" nextarg="25"
+data="25"
+arg="--pct-trackball" mCurArgData="null" mNextArg=7 argwas="--pct-trackball" nextarg="0"
+data="0"
+arg="--pct-nav" mCurArgData="null" mNextArg=9 argwas="--pct-nav" nextarg="5"
+data="5"
+arg="--pct-majornav" mCurArgData="null" mNextArg=11 argwas="--pct-majornav" nextarg="5"
+data="5"
+arg="--pct-syskeys" mCurArgData="null" mNextArg=13 argwas="--pct-syskeys" nextarg="0"
+data="0"
+arg="--pct-appswitch" mCurArgData="null" mNextArg=15 argwas="--pct-appswitch" nextarg="5"
+data="5"
+arg="--pct-anyevent" mCurArgData="null" mNextArg=17 argwas="--pct-anyevent" nextarg="10"
+data="10"
+arg="--ignore-crashes" mCurArgData="null" mNextArg=19 argwas="--ignore-crashes" nextarg="--ignore-timeouts"
+arg="--ignore-timeouts" mCurArgData="null" mNextArg=20 argwas="--ignore-timeouts" nextarg="--ignore-security-exceptions"
+arg="--ignore-security-exceptions" mCurArgData="null" mNextArg=21 argwas="--ignore-security-exceptions" nextarg="--monitor-native-crashes"
+arg="--monitor-native-crashes" mCurArgData="null" mNextArg=22 argwas="--monitor-native-crashes" nextarg="-v"
+:Monkey: seed=1776977101665 count=10000
+:IncludeCategory: android.intent.category.LAUNCHER
+:IncludeCategory: android.intent.category.MONKEY
+// Selecting main activities from category android.intent.category.LAUNCHER
+//   + Using main activity com.samsung.android.gallery.app.activity.GalleryActivity (from package com.sec.android.gallery3d)
+//   + Using main activity com.google.android.apps.chrome.Main (from package com.android.chrome)
+//   + Using main activity com.android.settings.Settings (from package com.android.settings)
+//   + Using main activity com.android.vending.AssetBrowserActivity (from package com.android.vending)
+//   + Using main activity com.google.android.maps.MapsActivity (from package com.google.android.apps.maps)
+//   + Using main activity com.google.android.apps.messaging.ui.ConversationListActivity (from package com.google.android.apps.messaging)
+//   + Using main activity com.google.android.apps.tachyon.MainActivity (from package com.google.android.apps.tachyon)
+//   + Using main activity com.google.android.gm.ConversationListActivityGmail (from package com.google.android.gm)
+//   + Using main activity com.google.android.youtube.app.honeycomb.Shell$HomeActivity (from package com.google.android.youtube)
+//   + Using main activity com.samsung.android.contacts.contactslist.PeopleActivity (from package com.samsung.android.app.contacts)
+//   + Using main activity com.samsung.android.arzone.ARZoneLauncher (from package com.samsung.android.arzone)
+//   + Using main activity com.samsung.android.bixby.assistanthome.AssistantHomeLauncherActivity (from package com.samsung.android.bixby.agent)
+//   + Using main activity com.samsung.android.app.calendar.activity.MainActivity (from package com.samsung.android.calendar)
+//   + Using main activity com.samsung.android.dialer.DialtactsActivity (from package com.samsung.android.dialer)
+//   + Using main activity com.android.mms.ui.ConversationComposer (from package com.samsung.android.messaging)
+//   + Using main activity com.sec.android.app.camera.Camera (from package com.sec.android.app.camera)
+//   + Using main activity com.github.kr328.clash.MainActivity (from package com.github.metacubex.clash.meta)
+//   + Using main activity com.google.android.apps.docs.app.NewMainProxyActivity (from package com.google.android.apps.docs)
+//   + Using main activity com.google.android.apps.photos.home.HomeActivity (from package com.google.android.apps.photos)
+//   + Using main activity com.google.android.apps.youtube.music.activities.MusicActivity (from package com.google.android.apps.youtube.music)
+//   + Using main activity com.google.android.videos.GoogleTvEntryPoint (from package com.google.android.videos)
+//   + Using main activity com.microsoft.office.outlook.MainActivity (from package com.microsoft.office.outlook)
+//   + Using main activity com.samsung.android.app.tips.TipsMainActivity (from package com.samsung.android.app.tips)
+//   + Using main activity com.samsung.android.oneconnect.ui.SCMainActivity (from package com.samsung.android.oneconnect)
+//   + Using main activity com.sec.android.app.sbrowser.SBrowserMainActivity (from package com.sec.android.app.sbrowser)
+//   + Using main activity com.samsung.android.app.shealth.home.HomeMainActivity (from package com.sec.android.app.shealth)
+//   + Using main activity app.lawnchair.LawnchairLauncher (from package com.sky.weather.servere.liveradar)
+//   + Using main activity com.spotify.music.MainActivity (from package com.spotify.music)
+//   + Using main activity com.google.android.googlequicksearchbox.SearchActivity (from package com.google.android.googlequicksearchbox)
+//   + Using main activity com.microsoft.skydrive.MainActivity (from package com.microsoft.skydrive)
+//   + Using main activity com.samsung.android.app.spage.main.LauncherActivity (from package com.samsung.android.app.spage)
+//   + Using main activity com.samsung.android.game.gamehome.app.MainActivity (from package com.samsung.android.game.gamehome)
+//   + Using main activity com.sec.android.app.clockpackage.ClockPackage (from package com.sec.android.app.clockpackage)
+//   + Using main activity com.sec.android.app.fm.MainActivity (from package com.sec.android.app.fm)
+//   + Using main activity com.sec.android.app.myfiles.external.ui.MainActivity (from package com.sec.android.app.myfiles)
+//   + Using main activity com.sec.android.app.samsungapps.SamsungAppsMainActivity (from package com.sec.android.app.samsungapps)
+//   + Using main activity bloodpressure.bloodpressureapp.bloodpressuretracker.activity.SplashActivity (from package bloodpressure.bloodpressureapp.bloodpressuretracker)
+//   + Using main activity com.google.firebase.MessagingUnityPlayerActivity (from package com.adult.hidden.object.puzzle.game)
+//   + Using main activity com.agreed.brands.majority.MainActivity (from package com.agreed.brands.majority)
+//   + Using main activity com.airhorn.funny.prank.sounds.MainActivity (from package com.airhorn.funny.prank.sounds)
+//   + Using main activity com.an.flashlight.flashalert.flashlightpro.MainActivity (from package com.an.flashlight.flashalert.flashlightpro)
+//   + Using main activity com.astrill.astrillvpn.LogicCoreActivity (from package com.astrill.astrillvpn)
+//   + Using main activity com.blood.pressure.bp.SplashActivity (from package com.blood.pressure.bptracker)
+//   + Using main activity com.blood.pressure.bp.SplashActivity (from package com.bloodpressure.health.healthtracker)
+//   + Using main activity com.unity3d.player.UnityPlayerActivity (from package com.bravestars.bz.prank.sound.simulator.funny)
+//   + Using main activity com.fgmwl.ejiv.nkgvncvxodqdote (from package com.bsoftlimited.file.manager)
+//   + Using main activity com.uutxoo.ergktfvl.wtpewlegxmzmxcv (from package com.bsoftlimited.photo.restore)
+//   + Using main activity com.calculatinggenius.mycalculator.MainActivity (from package com.calculatinggenius.mycalculator)
+//   + Using main activity com.demo.xclcharts.ChartsActivity (from package com.demo.xclcharts)
+//   + Using main activity com.echo.holographlibrarysample.MainActivity (from package com.echo.holographlibrarysample)
+//   + Using main activity com.example.healthyapp.activity.LaunchActivity (from package com.example.healthyapp)
+//   + Using main activity com.example.kotlin_app_study.MainActivity (from package com.example.kotlin_app_study)
+//   + Using main activity com.example.notificationtest.MainActivity (from package com.example.notificationtest)
+//   + Using main activity com.example.rangebarchart.MainActivity (from package com.example.rangebarchart)
+//   + Using main activity com.example.testapp.MainActivity (from package com.example.testapp)
+//   + Using main activity com.example.voices.activity.WebActivity (from package com.example.voices)
+//   + Using main activity com.example.voicesimulation.activity.LaunchActivity (from package com.example.voicesimulation)
+//   + Using main activity com.facebook.katana.LoginActivity (from package com.facebook.katana)
+//   + Using main activity com.unity3d.player.UnityPlayerActivity (from package com.fun234playergames.partygames)
+//   + Using main activity com.app.juneproj.ui.activity.SplashActivity (from package com.hidden.scavenger.game)
+//   + Using main activity com.linkedin.android.authenticator.LaunchActivity (from package com.linkedin.android)
+//   + Using main activity com.lutech.fakevideocall.screen.splash.SplashActivity (from package com.lutech.fakevideocall)
+//   + Using main activity com.meitounao.samsungin_appdemo.MainActivity (from package com.meitounao.samsungin_appdemo)
+//   + Using main activity com.mesh.classic.outlook.seeing.view.CoreActivity (from package com.mesh.classic.outlook.seeing)
+//   + Using main activity com.microsoft.office.officesuite.OfficeSuiteActivity (from package com.microsoft.office.officehubrow)
+//   + Using main activity com.netflix.mediaclient.ui.launch.UIWebViewActivity (from package com.netflix.mediaclient)
+//   + Using main activity com.unity3d.player.utils.MainActivity (from package com.parks.towards.reply.limits)
+//   + Using main activity com.samsung.android.app.notes.memolist.MemoListActivity (from package com.samsung.android.app.notes)
+//   + Using main activity com.samsung.android.app.watchmanager.setupwizard.SetupWizardWelcomeActivity (from package com.samsung.android.app.watchmanager)
+//   + Using main activity com.samsung.android.galaxy.MainActivity (from package com.samsung.android.galaxy)
+//   + Using main activity com.samsung.android.sdk.iap.sample.view.MainActivity (from package com.samsung.android.sdk.iap.v6.sample1)
+//   + Using main activity com.samsung.android.spay.ui.SpayMainActivity (from package com.samsung.android.spay)
+//   + Using main activity com.samsung.android.voc.LauncherActivity (from package com.samsung.android.voc)
+//   + Using main activity com.samsung.sree.ui.MainActivity (from package com.samsung.sree)
+//   + Using main activity com.sec.android.app.popupcalculator.Calculator (from package com.sec.android.app.popupcalculator)
+//   + Using main activity com.sec.android.app.voicenote.main.VNMainActivity (from package com.sec.android.app.voicenote)
+//   + Using main activity com.sec.android.easyMover.ui.launch.LauncherActivity (from package com.sec.android.easyMover)
+//   + Using main activity com.smpond.pdfviewer.ui.SplashActivity (from package com.smpond.pdfviewer)
+//   + Using main activity com.unit.fake.call.MainActivity (from package com.unit.fake.call)
+//   + Using main activity com.v2ray.ang.ui.MainActivity (from package com.v2ray.ang)
+//   + Using main activity com.voice.prankster.SplashActivity (from package com.voice.prankster)
+//   + Using main activity com.yl.qrscanner.ui.SplashActivity (from package com.x.free.file.manager.app)
+// Selecting main activities from category android.intent.category.MONKEY
+//   + Using main activity com.android.settings.Settings$RunningServicesActivity (from package com.android.settings)
+//   + Using main activity com.android.settings.Settings$StorageUseActivity (from package com.android.settings)
+//   + Using main activity com.android.launcher3.uioverrides.QuickstepLauncher (from package com.sec.android.app.launcher)
+//   + Using main activity com.sec.android.app.launcher.activities.LauncherActivity (from package com.sec.android.app.launcher)
+//   + Using main activity app.lawnchair.LawnchairLauncher (from package com.sky.weather.servere.liveradar)
+//   + Using main activity com.google.android.googlequicksearchbox.SearchActivity (from package com.google.android.googlequicksearchbox)
+//   + Using main activity com.samsung.android.video.player.activity.MonkeyTestActivity (from package com.samsung.android.video)
+// Seeded: 1776977101665
+// Event percentages:
+//   0: 50.0%
+//   1: 25.0%
+//   2: 0.0%
+//   3: -0.0%
+//   4: -0.0%
+//   5: -0.0%
+//   6: 5.0%
+//   7: 5.0%
+//   8: -0.0%
+//   9: 5.0%
+//   10: 0.0%
+//   11: 10.0%
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.facebook.katana/.LoginActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.facebook.katana/.LoginActivity } in package com.facebook.katana
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(831.0,978.0)
+:Sending Touch (ACTION_UP): 0:(834.34906,971.8633)
+Sleeping for 50 milliseconds
+:Sending Key (ACTION_DOWN): 82    // KEYCODE_MENU
+:Sending Key (ACTION_UP): 82    // KEYCODE_MENU
+    // Allowing start of Intent { act=com.facebook.katana cmp=com.facebook.appmanager/com.facebook.oxygen.appmanager.ui.landing.StubInstallActivity } in package com.facebook.appmanager
+    // activityResuming(com.facebook.appmanager)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(54.0,2045.0)
+:Sending Touch (ACTION_MOVE): 0:(58.530266,2043.3817)
+:Sending Touch (ACTION_MOVE): 0:(62.1494,2040.2388)
+:Sending Touch (ACTION_MOVE): 0:(83.19314,2033.1831)
+:Sending Touch (ACTION_MOVE): 0:(87.80605,2031.4116)
+:Sending Touch (ACTION_MOVE): 0:(93.16458,2029.0868)
+:Sending Touch (ACTION_MOVE): 0:(107.79371,2026.1599)
+:Sending Touch (ACTION_MOVE): 0:(124.28787,2025.1908)
+:Sending Touch (ACTION_UP): 0:(129.84796,2023.2512)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(558.0,1220.0)
+:Sending Touch (ACTION_UP): 0:(549.06244,1221.7784)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(783.0,727.0)
+:Sending Touch (ACTION_MOVE): 0:(784.2973,716.2502)
+:Sending Touch (ACTION_UP): 0:(798.7766,712.07666)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(47.0,315.0)
+:Sending Touch (ACTION_UP): 0:(46.703053,325.84375)
+Sleeping for 50 milliseconds
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.example.healthyapp/.activity.LaunchActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.example.healthyapp/.activity.LaunchActivity } in package com.example.healthyapp
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(333.0,2104.0)
+:Sending Touch (ACTION_UP): 0:(334.27054,2104.3667)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(225.0,152.0)
+:Sending Touch (ACTION_UP): 0:(224.86311,169.34737)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(562.0,1265.0)
+:Sending Touch (ACTION_MOVE): 0:(559.2742,1264.3025)
+:Sending Touch (ACTION_MOVE): 0:(540.31244,1260.9003)
+:Sending Touch (ACTION_MOVE): 0:(522.51654,1258.7042)
+:Sending Touch (ACTION_MOVE): 0:(514.4666,1255.8699)
+:Sending Touch (ACTION_MOVE): 0:(497.79352,1255.5441)
+:Sending Touch (ACTION_MOVE): 0:(495.0465,1253.7936)
+:Sending Touch (ACTION_UP): 0:(492.69675,1253.0404)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(309.0,712.0)
+:Sending Touch (ACTION_UP): 0:(291.36002,713.7046)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(690.0,1354.0)
+:Sending Touch (ACTION_MOVE): 0:(687.2672,1352.7495)
+:Sending Touch (ACTION_MOVE): 0:(678.642,1352.7483)
+:Sending Touch (ACTION_MOVE): 0:(663.9795,1346.9999)
+:Sending Touch (ACTION_MOVE): 0:(658.661,1338.0052)
+:Sending Touch (ACTION_MOVE): 0:(643.64825,1337.3058)
+:Sending Touch (ACTION_MOVE): 0:(627.9371,1329.1564)
+:Sending Touch (ACTION_MOVE): 0:(613.93536,1326.0139)
+:Sending Touch (ACTION_MOVE): 0:(592.60266,1319.9639)
+:Sending Touch (ACTION_UP): 0:(576.115,1315.675)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(1075.0,1861.0)
+:Sending Touch (ACTION_UP): 0:(1080.0,1857.9722)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(960.0,1843.0)
+:Sending Touch (ACTION_UP): 0:(962.37146,1845.3975)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(171.0,712.0)
+:Sending Touch (ACTION_MOVE): 0:(170.6363,712.2855)
+:Sending Touch (ACTION_MOVE): 0:(167.50948,720.34784)
+:Sending Touch (ACTION_MOVE): 0:(152.70221,722.69476)
+:Sending Touch (ACTION_MOVE): 0:(139.70981,723.7196)
+:Sending Touch (ACTION_MOVE): 0:(139.61276,728.0537)
+:Sending Touch (ACTION_MOVE): 0:(125.84332,733.47266)
+:Sending Touch (ACTION_MOVE): 0:(114.37781,740.3678)
+:Sending Touch (ACTION_MOVE): 0:(112.82974,745.2566)
+:Sending Touch (ACTION_MOVE): 0:(101.464874,747.5669)
+:Sending Touch (ACTION_UP): 0:(87.507034,751.6561)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(353.0,225.0)
+:Sending Touch (ACTION_MOVE): 0:(365.2211,234.33772)
+:Sending Touch (ACTION_MOVE): 0:(367.12958,241.92244)
+:Sending Touch (ACTION_MOVE): 0:(368.18378,245.48012)
+:Sending Touch (ACTION_MOVE): 0:(373.10135,248.95514)
+:Sending Touch (ACTION_MOVE): 0:(384.03503,255.62021)
+:Sending Touch (ACTION_MOVE): 0:(389.19626,263.8908)
+:Sending Touch (ACTION_MOVE): 0:(389.63126,265.15298)
+:Sending Touch (ACTION_UP): 0:(400.4266,272.97458)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(732.0,1144.0)
+:Sending Touch (ACTION_MOVE): 0:(728.3383,1125.0814)
+:Sending Touch (ACTION_MOVE): 0:(725.92114,1120.5444)
+:Sending Touch (ACTION_MOVE): 0:(717.74335,1104.3124)
+:Sending Touch (ACTION_MOVE): 0:(704.9112,1087.978)
+:Sending Touch (ACTION_UP): 0:(691.00745,1081.845)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(830.0,388.0)
+:Sending Touch (ACTION_MOVE): 0:(844.5149,397.41248)
+:Sending Touch (ACTION_MOVE): 0:(863.1568,398.6912)
+:Sending Touch (ACTION_MOVE): 0:(874.1353,410.84735)
+:Sending Touch (ACTION_MOVE): 0:(882.62354,421.5291)
+:Sending Touch (ACTION_MOVE): 0:(898.7801,426.52686)
+:Sending Touch (ACTION_MOVE): 0:(908.61017,435.96283)
+:Sending Touch (ACTION_MOVE): 0:(920.40405,439.1614)
+:Sending Touch (ACTION_UP): 0:(924.66376,439.29965)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(915.0,1201.0)
+:Sending Touch (ACTION_UP): 0:(914.5536,1200.6658)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(573.0,1017.0)
+:Sending Touch (ACTION_UP): 0:(557.1919,1011.1146)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(1061.0,1172.0)
+:Sending Touch (ACTION_UP): 0:(1058.7114,1153.3359)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(342.0,2039.0)
+:Sending Touch (ACTION_MOVE): 0:(362.11786,2040.3544)
+:Sending Touch (ACTION_MOVE): 0:(365.82037,2040.651)
+:Sending Touch (ACTION_MOVE): 0:(375.27783,2041.3254)
+:Sending Touch (ACTION_MOVE): 0:(375.6583,2042.3522)
+:Sending Touch (ACTION_UP): 0:(380.31622,2043.5525)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(946.0,240.0)
+:Sending Touch (ACTION_UP): 0:(934.4045,257.7928)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(527.0,810.0)
+    //[calendar_time:2026-04-23 16:54:38.279  system_uptime:197868382]
+    // Sending event #100
+:Sending Touch (ACTION_MOVE): 0:(526.6514,801.6544)
+:Sending Touch (ACTION_MOVE): 0:(521.95825,796.9677)
+:Sending Touch (ACTION_MOVE): 0:(521.1502,795.20935)
+:Sending Touch (ACTION_MOVE): 0:(517.627,786.381)
+:Sending Touch (ACTION_MOVE): 0:(511.85715,783.276)
+:Sending Touch (ACTION_MOVE): 0:(507.65204,777.1527)
+:Sending Touch (ACTION_MOVE): 0:(505.41196,771.29144)
+:Sending Touch (ACTION_MOVE): 0:(500.52695,764.94244)
+:Sending Touch (ACTION_MOVE): 0:(499.1141,763.8255)
+:Sending Touch (ACTION_UP): 0:(497.96432,763.65283)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(18.0,1158.0)
+:Sending Touch (ACTION_MOVE): 0:(36.582962,1154.3274)
+:Sending Touch (ACTION_MOVE): 0:(50.105465,1147.9037)
+:Sending Touch (ACTION_MOVE): 0:(71.12038,1137.2397)
+:Sending Touch (ACTION_MOVE): 0:(85.74651,1131.6088)
+:Sending Touch (ACTION_UP): 0:(92.39641,1131.3313)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(820.0,528.0)
+:Sending Touch (ACTION_MOVE): 0:(830.3445,524.7133)
+:Sending Touch (ACTION_UP): 0:(833.5732,518.79474)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(834.0,2039.0)
+:Sending Touch (ACTION_UP): 0:(831.48004,2040.8442)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(175.0,608.0)
+:Sending Touch (ACTION_MOVE): 0:(167.20015,608.3058)
+:Sending Touch (ACTION_MOVE): 0:(159.81206,608.6725)
+:Sending Touch (ACTION_MOVE): 0:(155.0429,609.066)
+:Sending Touch (ACTION_MOVE): 0:(150.67105,609.40356)
+:Sending Touch (ACTION_UP): 0:(138.54556,609.78143)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(521.0,229.0)
+:Sending Touch (ACTION_MOVE): 0:(520.4169,249.34473)
+:Sending Touch (ACTION_MOVE): 0:(519.30664,258.95862)
+:Sending Touch (ACTION_MOVE): 0:(518.3556,274.46164)
+:Sending Touch (ACTION_MOVE): 0:(517.2646,279.96945)
+:Sending Touch (ACTION_UP): 0:(516.34595,282.06235)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(789.0,591.0)
+:Sending Touch (ACTION_MOVE): 0:(792.91,584.3833)
+:Sending Touch (ACTION_MOVE): 0:(796.33636,581.12805)
+:Sending Touch (ACTION_MOVE): 0:(809.1598,573.9616)
+:Sending Touch (ACTION_MOVE): 0:(819.0235,570.0646)
+:Sending Touch (ACTION_UP): 0:(831.04913,564.3539)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(288.0,1182.0)
+:Sending Touch (ACTION_UP): 0:(308.69196,1173.159)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(787.0,2157.0)
+:Sending Touch (ACTION_UP): 0:(773.0254,2150.6243)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(414.0,398.0)
+:Sending Touch (ACTION_MOVE): 0:(411.13104,393.5969)
+:Sending Touch (ACTION_MOVE): 0:(408.19196,393.37616)
+:Sending Touch (ACTION_UP): 0:(407.08453,388.47498)
+Sleeping for 50 milliseconds
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.netflix.mediaclient/.ui.launch.UIWebViewActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.netflix.mediaclient/.ui.launch.UIWebViewActivity } in package com.netflix.mediaclient
+Sleeping for 50 milliseconds
+:Sending Key (ACTION_DOWN): 21    // KEYCODE_DPAD_LEFT
+:Sending Key (ACTION_UP): 21    // KEYCODE_DPAD_LEFT
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(421.0,160.0)
+:Sending Touch (ACTION_UP): 0:(420.59982,161.47789)
+Sleeping for 50 milliseconds
+:Sending Key (ACTION_DOWN): 52    // KEYCODE_X
+:Sending Key (ACTION_UP): 52    // KEYCODE_X
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(743.0,476.0)
+:Sending Touch (ACTION_UP): 0:(740.63385,467.7849)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(192.0,188.0)
+:Sending Touch (ACTION_UP): 0:(193.93146,181.55266)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(419.0,1828.0)
+:Sending Touch (ACTION_UP): 0:(424.11795,1825.1023)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(954.0,515.0)
+:Sending Touch (ACTION_UP): 0:(956.94525,512.75)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(404.0,113.0)
+:Sending Touch (ACTION_UP): 0:(404.0065,111.06853)
+Sleeping for 50 milliseconds
+    // Allowing start of Intent { cmp=com.example.healthyapp/.activity.MainActivity } in package com.example.healthyapp
+    // activityResuming(com.example.healthyapp)
+:Sending Touch (ACTION_DOWN): 0:(479.0,1261.0)
+:Sending Touch (ACTION_MOVE): 0:(467.10263,1261.5394)
+:Sending Touch (ACTION_MOVE): 0:(460.841,1272.4048)
+:Sending Touch (ACTION_MOVE): 0:(459.91968,1291.5411)
+:Sending Touch (ACTION_MOVE): 0:(453.1043,1313.2401)
+:Sending Touch (ACTION_MOVE): 0:(449.16693,1323.1351)
+:Sending Touch (ACTION_MOVE): 0:(440.50827,1338.4508)
+:Sending Touch (ACTION_MOVE): 0:(439.45605,1348.7206)
+:Sending Touch (ACTION_MOVE): 0:(438.45358,1371.6019)
+:Sending Touch (ACTION_UP): 0:(427.43884,1388.518)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(17.0,1335.0)
+:Sending Touch (ACTION_UP): 0:(18.969715,1328.7496)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(164.0,306.0)
+:Sending Touch (ACTION_MOVE): 0:(158.53171,294.8681)
+:Sending Touch (ACTION_MOVE): 0:(152.24161,290.3754)
+:Sending Touch (ACTION_MOVE): 0:(142.41074,283.07004)
+:Sending Touch (ACTION_MOVE): 0:(131.13176,278.51297)
+:Sending Touch (ACTION_MOVE): 0:(129.52837,266.08078)
+:Sending Touch (ACTION_MOVE): 0:(125.30364,254.28633)
+:Sending Touch (ACTION_MOVE): 0:(124.8341,242.6322)
+:Sending Touch (ACTION_MOVE): 0:(119.92999,233.1052)
+:Sending Touch (ACTION_MOVE): 0:(111.91536,228.99718)
+:Sending Touch (ACTION_UP): 0:(105.71774,216.43202)
+Sleeping for 50 milliseconds
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.samsung.android.app.notes/.memolist.MemoListActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.samsung.android.app.notes/.memolist.MemoListActivity } in package com.samsung.android.app.notes
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(609.0,947.0)
+:Sending Touch (ACTION_UP): 0:(612.8369,938.5989)
+Sleeping for 50 milliseconds
+:Sending Key (ACTION_DOWN): 7    // KEYCODE_0
+:Sending Key (ACTION_UP): 7    // KEYCODE_0
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(759.0,1564.0)
+:Sending Touch (ACTION_UP): 0:(758.6337,1581.9263)
+Sleeping for 50 milliseconds
+:Sending Key (ACTION_DOWN): 82    // KEYCODE_MENU
+:Sending Key (ACTION_UP): 82    // KEYCODE_MENU
+Sleeping for 50 milliseconds
+:Sending Key (ACTION_DOWN): 82    // KEYCODE_MENU
+:Sending Key (ACTION_UP): 82    // KEYCODE_MENU
+Sleeping for 50 milliseconds
+:Sending Key (ACTION_DOWN): 82    // KEYCODE_MENU
+:Sending Key (ACTION_UP): 82    // KEYCODE_MENU
+    //[calendar_time:2026-04-23 16:54:44.734  system_uptime:197874804]
+    // Sending event #200
+Sleeping for 50 milliseconds
+    //[calendar_time:2026-04-23 16:54:44.785  system_uptime:197874855]
+    // Sending event #200
+:Sending Key (ACTION_DOWN): 158    // KEYCODE_NUMPAD_DOT
+:Sending Key (ACTION_UP): 158    // KEYCODE_NUMPAD_DOT
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(952.0,1819.0)
+:Sending Touch (ACTION_UP): 0:(945.10126,1827.7131)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(1030.0,1545.0)
+:Sending Touch (ACTION_UP): 0:(1049.2562,1545.6989)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(725.0,2031.0)
+:Sending Touch (ACTION_UP): 0:(723.84973,2041.2428)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(65.0,1438.0)
+:Sending Touch (ACTION_MOVE): 0:(41.959763,1455.1956)
+:Sending Touch (ACTION_MOVE): 0:(39.608635,1455.4519)
+:Sending Touch (ACTION_MOVE): 0:(27.364037,1472.5067)
+:Sending Touch (ACTION_MOVE): 0:(9.542248,1480.1194)
+:Sending Touch (ACTION_MOVE): 0:(0.0,1491.168)
+:Sending Touch (ACTION_MOVE): 0:(0.0,1496.5946)
+:Sending Touch (ACTION_MOVE): 0:(0.0,1502.1108)
+:Sending Touch (ACTION_MOVE): 0:(0.0,1509.9491)
+:Sending Touch (ACTION_UP): 0:(0.0,1529.3809)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(105.0,559.0)
+:Sending Touch (ACTION_MOVE): 0:(96.87059,561.0641)
+:Sending Touch (ACTION_UP): 0:(90.46512,561.638)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(534.0,1470.0)
+:Sending Touch (ACTION_UP): 0:(524.69684,1470.3071)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(49.0,1719.0)
+:Sending Touch (ACTION_MOVE): 0:(73.00162,1708.571)
+:Sending Touch (ACTION_UP): 0:(74.235504,1707.9581)
+Sleeping for 50 milliseconds
+:Sending Key (ACTION_DOWN): 238    // KEYCODE_TV_SATELLITE_BS
+:Sending Key (ACTION_UP): 238    // KEYCODE_TV_SATELLITE_BS
+Sleeping for 50 milliseconds
+:Sending Key (ACTION_DOWN): 22    // KEYCODE_DPAD_RIGHT
+:Sending Key (ACTION_UP): 22    // KEYCODE_DPAD_RIGHT
+Sleeping for 50 milliseconds
+:Sending Key (ACTION_DOWN): 134    // KEYCODE_F4
+:Sending Key (ACTION_UP): 134    // KEYCODE_F4
+Sleeping for 50 milliseconds
+:Sending Key (ACTION_DOWN): 20    // KEYCODE_DPAD_DOWN
+:Sending Key (ACTION_UP): 20    // KEYCODE_DPAD_DOWN
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(825.0,261.0)
+:Sending Touch (ACTION_UP): 0:(823.6028,252.01132)
+Sleeping for 50 milliseconds
+    // Allowing start of Intent { cmp=com.samsung.android.app.notes/com.samsung.android.support.senl.nt.app.settings.SettingsMainActivity } in package com.samsung.android.app.notes
+:Sending Key (ACTION_DOWN): 226    // KEYCODE_MEDIA_TOP_MENU
+    // Allowing start of Intent { act=android.content.pm.action.REQUEST_PERMISSIONS pkg=com.google.android.permissioncontroller cmp=com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity } in package com.google.android.permissioncontroller
+:Sending Key (ACTION_UP): 226    // KEYCODE_MEDIA_TOP_MENU
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(735.0,885.0)
+:Sending Touch (ACTION_UP): 0:(734.4468,880.4846)
+Sleeping for 50 milliseconds
+:Sending Key (ACTION_DOWN): 23    // KEYCODE_DPAD_CENTER
+:Sending Key (ACTION_UP): 23    // KEYCODE_DPAD_CENTER
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(996.0,287.0)
+:Sending Touch (ACTION_UP): 0:(988.05414,292.7745)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(426.0,2089.0)
+:Sending Touch (ACTION_UP): 0:(428.49606,2089.0251)
+Sleeping for 50 milliseconds
+    // activityResuming(com.samsung.android.app.notes)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.samsung.android.bixby.agent/com.samsung.android.bixby.assistanthome.AssistantHomeLauncherActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.samsung.android.bixby.agent/com.samsung.android.bixby.assistanthome.AssistantHomeLauncherActivity } in package com.samsung.android.bixby.agent
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(579.0,1040.0)
+:Sending Touch (ACTION_UP): 0:(570.12756,1054.0514)
+Sleeping for 50 milliseconds
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.google.android.apps.photos/.home.HomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.google.android.apps.photos/.home.HomeActivity } in package com.google.android.apps.photos
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(473.0,1162.0)
+:Sending Touch (ACTION_UP): 0:(469.96762,1166.085)
+Sleeping for 50 milliseconds
+    // Allowing start of Intent { cmp=com.samsung.android.app.notes/com.samsung.android.support.senl.nt.app.settings.detail.SettingsDetailActivity } in package com.samsung.android.app.notes
+:Sending Touch (ACTION_DOWN): 0:(146.0,293.0)
+:Sending Touch (ACTION_UP): 0:(136.88585,287.72125)
+Sleeping for 50 milliseconds
+    // activityResuming(com.samsung.android.app.notes)
+:Sending Touch (ACTION_DOWN): 0:(979.0,34.0)
+:Sending Touch (ACTION_MOVE): 0:(979.0641,31.662477)
+:Sending Touch (ACTION_MOVE): 0:(979.66364,28.036325)
+:Sending Touch (ACTION_MOVE): 0:(984.15784,22.90897)
+:Sending Touch (ACTION_MOVE): 0:(985.66003,19.425526)
+:Sending Touch (ACTION_MOVE): 0:(987.0131,13.041403)
+:Sending Touch (ACTION_UP): 0:(991.5692,10.930277)
+Sleeping for 50 milliseconds
+    // Allowing start of Intent { act=com.samsung.android.bixby.onboarding.action.START_PROVISION pkg=com.samsung.android.bixby.agent cmp=com.samsung.android.bixby.agent/com.samsung.android.bixby.onboarding.provision.ProvisioningActivity } in package com.samsung.android.bixby.agent
+:Sending Key (ACTION_DOWN): 181    // KEYCODE_AVR_POWER
+    // Allowing start of Intent { act=com.msc.action.samsungaccount.REQUEST_ACCESSTOKEN cmp=com.osp.app.signin/com.samsung.android.samsungaccount.authentication.ui.requestaccesstoken.RequestAccessTokenActivity } in package com.osp.app.signin
+    // Allowing start of Intent { act=com.msc.action.samsungaccount.Update_NewTerms pkg=com.osp.app.signin cmp=com.osp.app.signin/com.samsung.android.samsungaccount.authentication.ui.tnc.view.TnCView } in package com.osp.app.signin
+:Sending Key (ACTION_UP): 181    // KEYCODE_AVR_POWER
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(1078.0,1091.0)
+:Sending Touch (ACTION_MOVE): 0:(1070.0748,1095.9875)
+:Sending Touch (ACTION_MOVE): 0:(1058.692,1096.98)
+:Sending Touch (ACTION_MOVE): 0:(1036.277,1101.3076)
+:Sending Touch (ACTION_MOVE): 0:(1032.063,1101.5294)
+:Sending Touch (ACTION_MOVE): 0:(1008.1058,1107.8658)
+:Sending Touch (ACTION_MOVE): 0:(1002.4466,1111.856)
+:Sending Touch (ACTION_UP): 0:(985.4343,1117.8505)
+Sleeping for 50 milliseconds
+:Sending Key (ACTION_DOWN): 23    // KEYCODE_DPAD_CENTER
+:Sending Key (ACTION_UP): 23    // KEYCODE_DPAD_CENTER
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(235.0,199.0)
+:Sending Touch (ACTION_UP): 0:(221.37854,202.62776)
+Sleeping for 50 milliseconds
+:Sending Key (ACTION_DOWN): 46    // KEYCODE_R
+:Sending Key (ACTION_UP): 46    // KEYCODE_R
+Sleeping for 50 milliseconds
+    // Allowing start of Intent { act=com.msc.action.samsungaccount.Update_NewTerms cmp=com.osp.app.signin/com.samsung.android.samsungaccount.authentication.ui.tnc.view.TncReAgreementView } in package com.osp.app.signin
+:Sending Touch (ACTION_DOWN): 0:(722.0,628.0)
+:Sending Touch (ACTION_MOVE): 0:(744.344,643.10846)
+:Sending Touch (ACTION_MOVE): 0:(760.4399,645.20087)
+:Sending Touch (ACTION_MOVE): 0:(762.7049,662.98175)
+:Sending Touch (ACTION_MOVE): 0:(783.1116,674.59125)
+:Sending Touch (ACTION_MOVE): 0:(798.88055,684.3257)
+:Sending Touch (ACTION_MOVE): 0:(801.5041,698.7471)
+:Sending Touch (ACTION_UP): 0:(810.8659,709.8587)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(818.0,554.0)
+:Sending Touch (ACTION_UP): 0:(831.47675,540.8999)
+Sleeping for 50 milliseconds
+    // Allowing start of Intent { cmp=com.osp.app.signin/com.samsung.android.account.web.WebAppActivity } in package com.osp.app.signin
+:Sending Key (ACTION_DOWN): 19    // KEYCODE_DPAD_UP
+:Sending Key (ACTION_UP): 19    // KEYCODE_DPAD_UP
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(484.0,1961.0)
+:Sending Touch (ACTION_UP): 0:(499.68768,1938.3522)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(472.0,1301.0)
+:Sending Touch (ACTION_UP): 0:(478.50232,1278.9473)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(106.0,1903.0)
+:Sending Touch (ACTION_UP): 0:(105.33229,1906.0082)
+Sleeping for 50 milliseconds
+:Sending Key (ACTION_DOWN): 23    // KEYCODE_DPAD_CENTER
+:Sending Key (ACTION_UP): 23    // KEYCODE_DPAD_CENTER
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(191.0,1906.0)
+:Sending Touch (ACTION_UP): 0:(167.9763,1921.1707)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(804.0,661.0)
+    //[calendar_time:2026-04-23 16:54:50.981  system_uptime:197881052]
+    // Sending event #300
+:Sending Touch (ACTION_UP): 0:(815.2467,661.021)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(1005.0,318.0)
+:Sending Touch (ACTION_UP): 0:(990.33813,333.4825)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(139.0,50.0)
+:Sending Touch (ACTION_UP): 0:(131.88663,50.194344)
+Sleeping for 50 milliseconds
+:Sending Key (ACTION_DOWN): 86    // KEYCODE_MEDIA_STOP
+:Sending Key (ACTION_UP): 86    // KEYCODE_MEDIA_STOP
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(980.0,1394.0)
+:Sending Touch (ACTION_UP): 0:(987.46185,1386.2649)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(499.0,2104.0)
+:Sending Touch (ACTION_MOVE): 0:(506.57874,2119.9856)
+:Sending Touch (ACTION_MOVE): 0:(510.74185,2134.316)
+:Sending Touch (ACTION_MOVE): 0:(515.90546,2147.733)
+:Sending Touch (ACTION_MOVE): 0:(521.53534,2159.7183)
+:Sending Touch (ACTION_MOVE): 0:(528.6032,2161.3518)
+:Sending Touch (ACTION_MOVE): 0:(533.188,2165.4814)
+:Sending Touch (ACTION_MOVE): 0:(535.938,2182.4036)
+:Sending Touch (ACTION_MOVE): 0:(541.8868,2186.0)
+:Sending Touch (ACTION_MOVE): 0:(547.95984,2186.0)
+:Sending Touch (ACTION_UP): 0:(555.4265,2186.0)
+Sleeping for 50 milliseconds
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=bloodpressure.bloodpressureapp.bloodpressuretracker/.activity.SplashActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=bloodpressure.bloodpressureapp.bloodpressuretracker/.activity.SplashActivity } in package bloodpressure.bloodpressureapp.bloodpressuretracker
+Sleeping for 50 milliseconds
+    // Allowing start of Intent { cmp=bloodpressure.bloodpressureapp.bloodpressuretracker/.activity.WelcomeActivity } in package bloodpressure.bloodpressureapp.bloodpressuretracker
+:Sending Touch (ACTION_DOWN): 0:(731.0,1541.0)
+:Sending Touch (ACTION_UP): 0:(736.65765,1541.2926)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(259.0,684.0)
+:Sending Touch (ACTION_UP): 0:(273.09103,683.5933)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(475.0,1543.0)
+:Sending Touch (ACTION_UP): 0:(470.93085,1551.0089)
+Sleeping for 50 milliseconds
+:Sending Key (ACTION_DOWN): 282    // KEYCODE_SYSTEM_NAVIGATION_LEFT
+:Sending Key (ACTION_UP): 282    // KEYCODE_SYSTEM_NAVIGATION_LEFT
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(321.0,1034.0)
+:Sending Touch (ACTION_UP): 0:(321.71164,1036.1106)
+Sleeping for 50 milliseconds
+:Sending Key (ACTION_DOWN): 23    // KEYCODE_DPAD_CENTER
+:Sending Key (ACTION_UP): 23    // KEYCODE_DPAD_CENTER
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(360.0,348.0)
+:Sending Touch (ACTION_UP): 0:(370.53998,335.2199)
+Sleeping for 50 milliseconds
+:Sending Key (ACTION_DOWN): 21    // KEYCODE_DPAD_LEFT
+:Sending Key (ACTION_UP): 21    // KEYCODE_DPAD_LEFT
+Sleeping for 50 milliseconds
+:Sending Key (ACTION_DOWN): 22    // KEYCODE_DPAD_RIGHT
+:Sending Key (ACTION_UP): 22    // KEYCODE_DPAD_RIGHT
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(267.0,776.0)
+:Sending Touch (ACTION_UP): 0:(264.14417,789.97107)
+Sleeping for 50 milliseconds
+:Sending Key (ACTION_DOWN): 113    // KEYCODE_CTRL_LEFT
+:Sending Key (ACTION_UP): 113    // KEYCODE_CTRL_LEFT
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(921.0,694.0)
+:Sending Touch (ACTION_MOVE): 0:(922.2646,695.001)
+:Sending Touch (ACTION_UP): 0:(933.44403,695.30426)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(777.0,1658.0)
+:Sending Touch (ACTION_UP): 0:(782.1703,1657.899)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(347.0,1532.0)
+:Sending Touch (ACTION_UP): 0:(332.6488,1542.1078)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(1.0,870.0)
+:Sending Touch (ACTION_MOVE): 0:(0.8347178,889.6946)
+:Sending Touch (ACTION_MOVE): 0:(0.54549366,898.7339)
+:Sending Touch (ACTION_UP): 0:(0.44602263,917.9037)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(601.0,2037.0)
+:Sending Touch (ACTION_MOVE): 0:(592.1014,2051.7559)
+:Sending Touch (ACTION_MOVE): 0:(585.90906,2055.37)
+:Sending Touch (ACTION_MOVE): 0:(581.9841,2065.8738)
+:Sending Touch (ACTION_MOVE): 0:(581.2742,2082.7466)
+:Sending Touch (ACTION_UP): 0:(579.9983,2094.63)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(791.0,901.0)
+:Sending Touch (ACTION_UP): 0:(786.8784,909.56903)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(191.0,1795.0)
+:Sending Touch (ACTION_UP): 0:(191.09596,1784.6144)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(116.0,2124.0)
+:Sending Touch (ACTION_UP): 0:(114.294815,2120.7292)
+Sleeping for 50 milliseconds
+:Sending Key (ACTION_DOWN): 243    // KEYCODE_TV_INPUT_HDMI_1
+:Sending Key (ACTION_UP): 243    // KEYCODE_TV_INPUT_HDMI_1
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(777.0,1618.0)
+:Sending Touch (ACTION_UP): 0:(777.83044,1617.8097)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(905.0,652.0)
+:Sending Touch (ACTION_MOVE): 0:(908.6961,666.9439)
+:Sending Touch (ACTION_MOVE): 0:(922.6066,685.18195)
+:Sending Touch (ACTION_MOVE): 0:(928.1854,693.2344)
+:Sending Touch (ACTION_MOVE): 0:(937.9487,696.22784)
+:Sending Touch (ACTION_MOVE): 0:(949.4977,708.4641)
+:Sending Touch (ACTION_MOVE): 0:(958.12634,712.3895)
+:Sending Touch (ACTION_MOVE): 0:(970.1938,715.32196)
+:Sending Touch (ACTION_MOVE): 0:(974.86633,715.5023)
+:Sending Touch (ACTION_UP): 0:(985.3564,727.01715)
+Sleeping for 50 milliseconds
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.bsoftlimited.file.manager/com.fgmwl.ejiv.nkgvncvxodqdote;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.bsoftlimited.file.manager/com.fgmwl.ejiv.nkgvncvxodqdote } in package com.bsoftlimited.file.manager
+Sleeping for 50 milliseconds
+:Sending Key (ACTION_DOWN): 25    // KEYCODE_VOLUME_DOWN
+    // Allowing start of Intent { cmp=com.bsoftlimited.file.manager/com.fgdxatbb.eynd.pdlqdfwlylwbw } in package com.bsoftlimited.file.manager
+    // activityResuming(com.bsoftlimited.file.manager)
+:Sending Key (ACTION_UP): 25    // KEYCODE_VOLUME_DOWN
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(19.0,750.0)
+:Sending Touch (ACTION_UP): 0:(16.375237,749.1068)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(693.0,2062.0)
+:Sending Touch (ACTION_MOVE): 0:(686.1663,2073.741)
+:Sending Touch (ACTION_UP): 0:(681.0172,2077.8005)
+Sleeping for 50 milliseconds
+:Sending Key (ACTION_DOWN): 23    // KEYCODE_DPAD_CENTER
+:Sending Key (ACTION_UP): 23    // KEYCODE_DPAD_CENTER
+Sleeping for 50 milliseconds
+:Sending Key (ACTION_DOWN): 82    // KEYCODE_MENU
+:Sending Key (ACTION_UP): 82    // KEYCODE_MENU
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(365.0,1322.0)
+:Sending Touch (ACTION_MOVE): 0:(353.9533,1321.2587)
+:Sending Touch (ACTION_MOVE): 0:(345.2202,1308.2848)
+:Sending Touch (ACTION_MOVE): 0:(326.3582,1304.5972)
+:Sending Touch (ACTION_MOVE): 0:(323.82507,1293.313)
+:Sending Touch (ACTION_UP): 0:(314.69937,1276.8075)
+Sleeping for 50 milliseconds
+    // Allowing start of Intent { act=android.settings.MANAGE_APP_ALL_FILES_ACCESS_PERMISSION dat=package: cmp=com.android.settings/.Settings$ManageExternalStorageActivity } in package com.android.settings
+:Sending Key (ACTION_DOWN): 23    // KEYCODE_DPAD_CENTER
+:Sending Key (ACTION_UP): 23    // KEYCODE_DPAD_CENTER
+    //[calendar_time:2026-04-23 16:54:54.529  system_uptime:197884599]
+    // Sending event #400
+Sleeping for 50 milliseconds
+    //[calendar_time:2026-04-23 16:54:54.580  system_uptime:197884650]
+    // Sending event #400
+:Sending Key (ACTION_DOWN): 145    // KEYCODE_NUMPAD_1
+:Sending Key (ACTION_UP): 145    // KEYCODE_NUMPAD_1
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(835.0,328.0)
+:Sending Touch (ACTION_MOVE): 0:(832.11664,328.0292)
+:Sending Touch (ACTION_MOVE): 0:(826.5398,328.18262)
+:Sending Touch (ACTION_MOVE): 0:(826.39276,330.15088)
+:Sending Touch (ACTION_MOVE): 0:(824.8807,332.69318)
+:Sending Touch (ACTION_MOVE): 0:(822.1081,332.84375)
+:Sending Touch (ACTION_MOVE): 0:(816.6602,335.84344)
+:Sending Touch (ACTION_MOVE): 0:(809.31287,337.7264)
+:Sending Touch (ACTION_MOVE): 0:(806.76154,339.25006)
+:Sending Touch (ACTION_MOVE): 0:(804.9855,339.91882)
+:Sending Touch (ACTION_UP): 0:(804.96875,340.06003)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(1065.0,2056.0)
+:Sending Touch (ACTION_MOVE): 0:(1059.2535,2056.3958)
+:Sending Touch (ACTION_MOVE): 0:(1057.4069,2057.07)
+:Sending Touch (ACTION_MOVE): 0:(1054.3987,2057.0825)
+:Sending Touch (ACTION_UP): 0:(1048.1155,2057.215)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(990.0,503.0)
+:Sending Touch (ACTION_UP): 0:(993.63995,511.05466)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(1072.0,1098.0)
+:Sending Touch (ACTION_UP): 0:(1074.8884,1092.1809)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(488.0,219.0)
+:Sending Touch (ACTION_UP): 0:(492.661,233.49655)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(312.0,581.0)
+:Sending Touch (ACTION_MOVE): 0:(302.96097,598.9696)
+:Sending Touch (ACTION_MOVE): 0:(299.91876,599.00464)
+:Sending Touch (ACTION_MOVE): 0:(296.91656,604.8268)
+:Sending Touch (ACTION_MOVE): 0:(294.2573,615.6445)
+:Sending Touch (ACTION_MOVE): 0:(280.39066,630.5436)
+:Sending Touch (ACTION_MOVE): 0:(273.97455,636.5214)
+:Sending Touch (ACTION_MOVE): 0:(273.78638,651.0868)
+:Sending Touch (ACTION_MOVE): 0:(260.84027,652.6884)
+:Sending Touch (ACTION_UP): 0:(248.1638,674.21655)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(483.0,1386.0)
+:Sending Touch (ACTION_UP): 0:(494.02267,1391.398)
+Sleeping for 50 milliseconds
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.sec.android.app.shealth/com.samsung.android.app.shealth.home.HomeMainActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.sec.android.app.shealth/com.samsung.android.app.shealth.home.HomeMainActivity } in package com.sec.android.app.shealth
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(571.0,1334.0)
+:Sending Touch (ACTION_MOVE): 0:(575.5626,1333.1965)
+:Sending Touch (ACTION_MOVE): 0:(579.73694,1330.1704)
+:Sending Touch (ACTION_MOVE): 0:(582.68713,1329.0353)
+:Sending Touch (ACTION_MOVE): 0:(584.4386,1324.5295)
+:Sending Touch (ACTION_UP): 0:(592.5399,1324.1206)
+Sleeping for 50 milliseconds
+:Sending Key (ACTION_DOWN): 265    // KEYCODE_STEM_1
+    // Allowing start of Intent { act=com.samsung.android.app.shealth.intent.action.START_OOBE pkg=com.sec.android.app.shealth cmp=com.sec.android.app.shealth/com.samsung.android.app.shealth.home.oobe2.view.HomeOobeActivity } in package com.sec.android.app.shealth
+:Sending Key (ACTION_UP): 265    // KEYCODE_STEM_1
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(384.0,569.0)
+:Sending Touch (ACTION_UP): 0:(385.58014,579.9482)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(841.0,586.0)
+:Sending Touch (ACTION_UP): 0:(836.7539,583.0395)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(615.0,1134.0)
+:Sending Touch (ACTION_UP): 0:(614.7866,1119.644)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(540.0,677.0)
+:Sending Touch (ACTION_MOVE): 0:(546.40015,677.72565)
+:Sending Touch (ACTION_MOVE): 0:(548.04926,679.8703)
+:Sending Touch (ACTION_MOVE): 0:(560.82794,685.8394)
+:Sending Touch (ACTION_UP): 0:(562.7306,693.0868)
+Sleeping for 50 milliseconds
+:Sending Key (ACTION_DOWN): 82    // KEYCODE_MENU
+:Sending Key (ACTION_UP): 82    // KEYCODE_MENU
+Sleeping for 50 milliseconds
+:Sending Key (ACTION_DOWN): 294    // KEYCODE_LANG
+:Sending Key (ACTION_UP): 294    // KEYCODE_LANG
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(40.0,898.0)
+:Sending Touch (ACTION_UP): 0:(39.459732,896.32605)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(545.0,422.0)
+:Sending Touch (ACTION_UP): 0:(534.9437,403.98553)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(580.0,508.0)
+:Sending Touch (ACTION_UP): 0:(574.513,518.7349)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(393.0,1072.0)
+:Sending Touch (ACTION_UP): 0:(394.13882,1077.7842)
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(76.0,998.0)
+:Sending Touch (ACTION_UP): 0:(59.845837,993.29755)
+Sleeping for 50 milliseconds
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.samsung.android.oneconnect/.ui.SCMainActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.samsung.android.oneconnect/.ui.SCMainActivity } in package com.samsung.android.oneconnect
+Sleeping for 50 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(385.0,1651.0)
+:Sending Touch (ACTION_UP): 0:(386.99045,1658.2184)
+Sleeping for 50 milliseconds
+:Sending Key (ACTION_DOWN): 22    // KEYCODE_DPAD_RIGHT
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.samsung.android.oneconnect/.uilayer.intro.IntroActivity } in package com.samsung.android.oneconnect
+    // activityResuming(com.samsung.android.oneconnect)
